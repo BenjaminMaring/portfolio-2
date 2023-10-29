@@ -1,0 +1,102 @@
+:root {
+    --accent: #45A6FF;
+}
+
+* {
+    padding: 0px; 
+    margin: 0px;
+}
+
+body {
+    background-color: #344e41;
+}
+
+.font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.white {
+    color: #eeeeee;
+}
+
+.heading {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--accent);
+}
+
+.logo-wrapper {
+    align-self: center;
+}
+
+.logo-wrapper > a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.menu-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav > li > a {
+    color: white;
+    font-size: 24px;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.hero {
+    height: 650px;
+    width: 100vw;
+    font-size: 160px;
+}
+
+.hero > p{
+    position: relative;
+    top: 10%;
+    left: 5%;
+}
+
+.title-effect > span {
+    color: #eeeeee;
+    z-index: 5;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: top 0.3s ease, left 0.3s ease;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #eeeeee;
+}
+
+
+.title-effect > span::after {
+    content: attr(data-letter);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--accent);
+    z-index: -1;
+    color: transparent;
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+.title-effect > span:hover {
+    left: -5px;
+    top: -5px;
+    transition: top 0.3s ease, left 0.3s ease;
+
+}
+
+.title-effect > span:hover::after {
+    left: 15px;
+    top: 15px;
+    transition: top 0.3s ease, left 0.3s ease;
+}
