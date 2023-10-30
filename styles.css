@@ -9,6 +9,7 @@
 
 body {
     background-color: #344e41;
+    
 }
 
 .font {
@@ -53,8 +54,7 @@ body {
 }
 
 .hero {
-    height: 650px;
-    width: 100vw;
+    height: 700px;
     font-size: 160px;
 }
 
@@ -62,7 +62,10 @@ body {
     position: relative;
     top: 10%;
     left: 5%;
-    width: 90%;
+}
+
+.title-effect {
+    max-width: 90%;
 }
 
 .title-effect > span {
@@ -82,7 +85,7 @@ body {
     position: absolute;
     left: 0px;
     top: 0px;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 4px;
     -webkit-text-stroke-color: var(--accent);
     z-index: -1;
     color: transparent;
@@ -100,4 +103,61 @@ body {
     left: 15px;
     top: 15px;
     transition: top 0.3s ease, left 0.3s ease;
+}
+
+.title-name {
+    font-size: 45px;
+    color: rgb(207, 207, 207);
+    max-width: 90%;
+}
+
+.about-me-wrapper {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    width: 90%;
+    font-size: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtext {
+    font-size: 20px;
+}
+
+.img-place-holder {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    margin-right: 120px;
+    position: relative;
+}
+
+.img-place-holder::before {
+    content: '';
+    width: 430px;
+    height: 430px;
+    left: -20px;
+    top: -20px;
+    position: absolute;
+    background-color: transparent;
+    border: solid 7px var(--accent);
+    border-radius: 50%;
+}
+
+.img-place-holder::after {
+    content: '';
+    width: 470px;
+    height: 470px;
+    left: -40px;
+    top: -40px;
+    position: absolute;
+    background-color: transparent;
+    border: solid 6px var(--accent);
+    border-radius: 50%;
 }
