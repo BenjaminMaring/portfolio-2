@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Maring</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
     <!-- google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!--  -->
 </head>
 <body>
     <header class="heading">
@@ -41,10 +41,25 @@
         <div class="about-me font white">
             <div>
                 <p>Hello</p>
-                <p class="subtext">My Name is Benjamin Maring, an aspiring front end software engineer.</p>
+                <p class="subtext">My Name is Benjamin Maring, an aspiring front end software engineer. I graduated from CSU Stanislaus, and I am currently honing my skills at Bay Valley Tech</p>
             </div>
-            <div class="img-place-holder"></div>
+            <div id="rings">
+                <div id="inner-ring" class="ring"></div>
+                <div id="outer-ring" class="ring"></div>
+                <div id="img-place-holder"></div>
+            </div>
         </div>
     </div>
+
+    <!-- projects section -->
+    <div class="projects-wrapper">
+        <p class="font white">Projects</p>
+        <img class="project img1" src="https://source.unsplash.com/random">
+        <img class="project" src="https://source.unsplash.com/random">
+        <img class="project" src="https://source.unsplash.com/random">
+    </div>
+
+
+    <script src="rings.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+/* here are the animations for the page, and the classes to assign them to images */
+.img1 {
+    animation: imgone 20s infinite;
+}
+
+
+@keyframes imgone {
+    0% {
+        left: -20%;
+        top: -20%;
+    }
+    25% {
+
+    }
+    50% {
+        left: 500px;
+        top: 200px;
+    }
+    75% {
+        
+    }
+    100% {
+        left: 20px;
+        top: 20px;
+    }
+}

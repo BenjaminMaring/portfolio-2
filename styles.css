@@ -127,37 +127,68 @@ body {
 
 .subtext {
     font-size: 20px;
+    max-width: 800px;
 }
 
-.img-place-holder {
+#rings {
+    margin-right: 120px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -100px;
+    z-index: 5;
+    border-radius: 50%;
+    
+}
+
+#img-place-holder {
     border-radius: 50%;
     width: 400px;
     height: 400px;
     background-color: blue;
-    margin-right: 120px;
+    position: relative;
+    transition: top ease 300ms, left ease 200ms;
+}
+
+.ring {
+    position: relative;
+    border: solid 10px var(--accent);
+    border-radius: 50%;
+    position: absolute;
+    transition: transform ease 200ms;
+}
+
+#inner-ring {
+    width: 420px;
+    height: 420px;
+}
+
+#outer-ring {
+    width: 460px;
+    height: 460px;
+}
+
+.projects-wrapper {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-wrapper > p {
+    font-size: 200px;
+    position: absolute;
+    z-index: 5;
+    text-shadow: 0px 0px 5px black;
+    font-weight: bold;
+}
+
+.project {
+    max-height: 300px;
     position: relative;
 }
 
-.img-place-holder::before {
-    content: '';
-    width: 430px;
-    height: 430px;
-    left: -20px;
-    top: -20px;
-    position: absolute;
-    background-color: transparent;
-    border: solid 7px var(--accent);
-    border-radius: 50%;
-}
-
-.img-place-holder::after {
-    content: '';
-    width: 470px;
-    height: 470px;
-    left: -40px;
-    top: -40px;
-    position: absolute;
-    background-color: transparent;
-    border: solid 6px var(--accent);
-    border-radius: 50%;
-}
