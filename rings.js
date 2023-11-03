@@ -17,7 +17,6 @@ rings.addEventListener("mousemove", e => {
 
     // rings.style.transform = "skew(" + x + "deg ," + y + "deg)";
 
-    img.style = "left: " + (percentY * 15) + "px; top: " + (percentX * 15) + "px;";
     inner.style = "transform: translate(" + (percentY * 20) + "px, " + (percentX * 20) + "px);"
     outer.style = "transform: translate(" + (percentY * 30) + "px, " + (percentX  * 30) + "px);"
 })
