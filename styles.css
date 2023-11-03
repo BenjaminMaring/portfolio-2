@@ -53,6 +53,14 @@ body {
     text-decoration: none;
 }
 
+.disclaimer {
+    position: absolute;
+    right: 5px;
+    top: 55px;
+    font-size: 24px;
+    color: rgb(27, 27, 27);
+}
+
 .hero {
     height: 700px;
     font-size: 160px;
@@ -173,22 +181,18 @@ body {
 
 .projects-wrapper {
     width: 100%;
-    height: 900px;
+    height: 800px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .projects-wrapper > p {
     font-size: 200px;
-    position: absolute;
+    width: 100%;
+    text-align: center;
+    align-self: center;
     z-index: 5;
     text-shadow: 0px 0px 5px black;
     font-weight: bold;
-}
-
-.project {
-    max-height: 300px;
-    position: relative;
 }
 
