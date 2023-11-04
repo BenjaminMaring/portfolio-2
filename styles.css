@@ -248,3 +248,8 @@ body {
     height: 400px;
 }
 
+.item-wrapper {
+    margin: 10px;
+    transition: display 300ms ease;
+}
+
