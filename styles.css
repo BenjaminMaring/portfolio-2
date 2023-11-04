@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #344e41;
+    background-color: #082032;
     overflow-x: hidden;
 }
 
@@ -58,7 +58,7 @@ body {
     right: 5px;
     top: 55px;
     font-size: 24px;
-    color: rgb(27, 27, 27);
+    color: rgb(87, 87, 87);
 }
 
 .hero {
@@ -148,8 +148,7 @@ body {
     position: relative;
     top: -100px;
     z-index: 5;
-    border-radius: 50%;
-    
+    border-radius: 50%;  
 }
 
 #img-place-holder {
@@ -180,47 +179,72 @@ body {
 }
 
 .projects-wrapper {
+    height: 600px;
     width: 100%;
-    height: 300px;
     display: flex;
-    position: relative;
+    justify-content: center;
 }
 
-.projects-wrapper > p {
-    font-size: 200px;
+.projects {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px rgb(177, 177, 177);
+}
+
+.project-title {
     width: 100%;
-    text-align: center;
-    align-self: center;
-    z-index: 5;
-    text-shadow: 3px 3px 10px black;
-    font-weight: bold;
-    position: absolute;
+    font-size: 30px;
+    padding-left: 10px;
 }
 
-.project {
-    max-height: 300px;
-    position: relative;
-    border: solid 1px var(--accent);
-}
-
-.img-track {
+.project-logo-wrapper {
     display: flex;
-    animation: 50s imgTrack infinite linear;
+    margin-right: 10px;
 }
-.ticker {
-    height: 300px;
+
+
+.project-description {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.unselected {
+    color: rgb(177, 177, 177);
+    transition: color 300ms ease;
+}
+
+.unselected:hover {
+    color: white;
+    transition: color 300ms ease;
+}
+
+.project-img-wrapper {
+    width: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.projects-wrapper:hover .img-track{
-    animation-play-state: paused;
-}
-
-@keyframes imgTrack {
-    from {
-        transform: translateX(0);
-    } to {
-        transform: translateX(-100%);
-    }
+.project-img {
+    height: 400px;
 }
 
