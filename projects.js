@@ -1,43 +1,35 @@
 
 function select(choice) {
     let splitness = document.getElementById('splitness');
-    let splitnessText = document.getElementById('splitness-text');
-
     let links = document.getElementById('links');
-    let linksText = document.getElementById('links-text');
-
     let aerowings = document.getElementById('aerowings');
-    let aerowingsText = document.getElementById('aerowings-text');
-
-    SVGFESpotLightElement
+    let img = document.getElementById('project-img')
+    
 
 if (choice == "splitness") {
-    splitness.classList = "item-wrapper white";
-    splitnessText.style = "display: block;"
 
-    links.classList = "item-wrapper unselected";
-    linksText.style = "display: none;";
+    splitness.classList = "item-wrapper white selected";
+    links.classList="item-wrapper unselected";
+    aerowings.classList="item-wrapper unselected";
 
-    aerowings.classList = "item-wrapper unselected";
-    aerowingsText.style = "display: none;";
+    img.src = "projects-screenshots/splitness.png"
+
 } else if (choice == "links") {
-    splitness.classList = "item-wrapper unselected";
-    splitnessText.style = "display: none;"
 
-    links.classList = "item-wrapper white";
-    linksText.style = "display: block;"
+    splitness.classList="item-wrapper unselected";
+    links.classList = "item-wrapper white selected";
+    aerowings.classList="item-wrapper unselected";
 
-    aerowings.classList = "item-wrapper unselected";
-    aerowingsText.style = "display: none;";
+    img.src = "projects-screenshots/links.png"
+
 } else if (choice == "aerowings") {
-    splitness.classList = "item-wrapper unselected";
-    splitnessText.style = "display: none;"
 
-    links.classList = "item-wrapper unselected";
-    linksText.style = "display: none;";
+    splitness.classList="item-wrapper unselected";
+    links.classList="item-wrapper unselected";
+    aerowings.classList = "item-wrapper white selected";
 
-    aerowings.classList = "item-wrapper white";
-    aerowingsText.style = "display: block;";
+    img.src = "projects-screenshots/aerowings.png"
+
 }
 
 

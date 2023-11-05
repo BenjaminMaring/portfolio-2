@@ -197,6 +197,12 @@ body {
     flex-direction: column;
 }
 
+.item-wrapper {
+    margin: 10px;
+    transition: max-height 700ms ease;
+    overflow: hidden;
+}
+
 .project-title-wrapper {
     display: flex;
     justify-content: space-between;
@@ -215,41 +221,37 @@ body {
     margin-right: 10px;
 }
 
-
 .project-description {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    margin: 10px;
     font-size: 16px;
 }
 
-.hidden {
-    display: none;
+.selected {
+    max-height: 400px !important;
 }
 
 .unselected {
     color: rgb(177, 177, 177);
-    transition: color 300ms ease;
+    transition: color 500ms ease;
+    max-height: 40px !important; 
+    transition: max-height 700ms ease;
 }
 
 .unselected:hover {
     color: white;
-    transition: color 300ms ease;
+    transition: color 500ms ease;
 }
 
 .project-img-wrapper {
     width: 50%;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.project-img {
+#project-img {
     height: 400px;
 }
 
-.item-wrapper {
-    margin: 10px;
-    transition: display 300ms ease;
-}
 
