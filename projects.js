@@ -43,7 +43,7 @@ if (choice == "splitness") {
     aerowings.classList="item-wrapper unselected";
     puf.classList = "item-wrapper white selected";
 
-    projectImg.src = "projects-screenshots/aerowings.png";
+    projectImg.src = "projects-screenshots/PowerUp.png";
 
 } }//end select()
 
@@ -54,8 +54,7 @@ section.addEventListener("mousemove", e => {
     //similar to the js logic used to fins the percent moved of the rings,
     //we do the same thing here. however the height may change, so we use the following
 
-    let perX = ((e.layerX - (section.offsetWidth/2)) / section.offsetWidth);
     let perY = ((e.layerY - (section.offsetHeight/2)) / section.offsetHeight);
 
-    projectImg.style="transform: translate(" + (perX * 20) + "px, " + (perY * 20) + "px);";
+    projectImg.style="transform: translate(0px, " + (perY * 20) + "px);";
 });
