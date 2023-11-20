@@ -30,6 +30,10 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: solid 1px var(--accent);
+    position: sticky;
+    top: 0px;
+    background-color: #082032;
+    z-index: 100;
 }
 
 .logo-wrapper {
@@ -343,6 +347,10 @@ body {
 
 /* classes for experience section */
 
+.exp {
+    margin-bottom: 100px;
+}
+
 .experience-section {
     width: 100%;
     position: relative;
@@ -382,4 +390,67 @@ body {
     margin: 10px;
 }
 
+.experience-wrapper {
+    position: absolute;
+    width: 100%;
+}
 
+.exp-title {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    flex-wrap: nowrap;
+}
+
+.left-side {
+    position: absolute;
+    right: calc(50% + 120px);
+}
+
+.right-side {
+    position: absolute;
+    left: calc(50% + 120px);
+}
+
+.line-horiz {
+    height: 4px;
+    width: 60px;
+    margin-left: 5px;
+}
+
+.line-horiz-right {
+    height: 4px;
+    width: 60px;
+    margin-right: 5px;
+}
+
+.line-stan {
+    position: absolute;
+    height: 550px;
+    width: 4px;
+    background-color: red;
+    right: calc(50% + 120px);
+    top: 142px;
+}
+
+.stanislaus::after {
+    content: 'persued a bachelors in computer science';
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    max-width: 350px;
+    color: darkgrey;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.bvt-link {
+    text-decoration: none;
+    color: white;
+}
+
+.bvt {
+    width: 4px;
+    height: 100px;
+    background-color: #ff5531;
+}
