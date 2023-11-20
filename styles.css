@@ -382,6 +382,19 @@ body {
     transform: translate(15px, -27px);
 }
 
+.end {
+    z-index: 5;
+}
+
+.end::after {
+    content: attr(data-year);
+    padding-left: 50px;
+    font-size: 30px;
+    rotate: -45deg;
+    position: absolute;
+    transform: translate(-50px, 20px);
+}
+
 .year-spacer {
     width: 4px;
     height: 200px;
@@ -426,22 +439,11 @@ body {
 
 .line-stan {
     position: absolute;
-    height: 550px;
+    height: 577px;
     width: 4px;
     background-color: red;
     right: calc(50% + 120px);
     top: 142px;
-}
-
-.stanislaus::after {
-    content: 'persued a bachelors in computer science';
-    position: absolute;
-    left: 0px;
-    top: 30px;
-    max-width: 350px;
-    color: darkgrey;
-    margin-top: 20px;
-    font-size: 24px;
 }
 
 .bvt-link {
@@ -452,5 +454,36 @@ body {
 .bvt {
     width: 4px;
     height: 100px;
+    background-color: #ff5531;
+}
+
+.rj-pro-vert-line {
+    width: 4px;
+    height: 395px;
+    background-color: var(--accent);
+}
+
+.to-center-right {
+    position: absolute;
+    left: 50%;
+    top: 1058px;
+    width: 120px;
+    height: 4px;
+    background-color: var(--accent);
+}
+
+.to-center-left {
+    position: absolute;
+    left: calc(50% - 120px);
+    top: 1058px;
+    width: 120px;
+    height: 4px;
+    background-color: #ff5531;
+}
+
+.line-bvt {
+    width: 4px;
+    height: 142px;
+    position: absolute;
     background-color: #ff5531;
 }
