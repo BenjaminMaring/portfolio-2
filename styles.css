@@ -12,8 +12,9 @@
 }
 
 body {
-    background-color: #082032;
+    /* background-color: #082032; */
     overflow-x: hidden;
+    background-image: linear-gradient(#082032 53%, black);
 }
 
 .font {
@@ -32,7 +33,7 @@ body {
     border-bottom: solid 1px var(--accent);
     position: sticky;
     top: 0px;
-    background-color: #082032;
+    background-color: var(--accent);
     z-index: 100;
 }
 
@@ -46,6 +47,19 @@ body {
     text-decoration: none;
     padding: 10px;
     font-size: 24px;
+}
+
+.header-icon {
+    font-size: 24px;
+    color: black;
+    text-shadow: 1px white;
+}
+
+#color-change {
+    border: none;
+    background: none;
+    width: 30px;
+    height: 30px;
 }
 
 .menu-nav {
@@ -195,6 +209,9 @@ body {
 .about-button:hover .after {
     bottom: 25px;
     right: 80px;
+
+
+    
     transition: bottom 500ms ease,
                 right 500ms 0.5s ease;
 }
@@ -444,6 +461,7 @@ body {
     background-color: red;
     right: calc(50% + 120px);
     top: 142px;
+    transition: height 300ms linear;
 }
 
 .bvt-link {
@@ -461,6 +479,7 @@ body {
     width: 4px;
     height: 395px;
     background-color: var(--accent);
+    transition: height 300ms linear;
 }
 
 .to-center-right {
@@ -486,4 +505,104 @@ body {
     height: 142px;
     position: absolute;
     background-color: #ff5531;
+    transition: height 300ms linear;
+}
+
+.exp-title::after {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    color: grey;
+    max-width: 450px;
+    font-size: 24px;
+}
+
+.stanislaus {
+    transition: opacity 300ms linear;
+}
+
+.stanislaus::after {
+    content: 'Started attending in Fall of 2018';
+}
+
+.bvtcamp {
+    transition: opacity 400ms linear;
+}
+
+.bvtcamp::after {
+    content: 'Learned HTML, CSS, JavaScript, and Bootstrap';
+    left: 70px;
+    top: 85px;
+}
+
+.graduated::after {
+    content: 'Graduated with a Bachelors in Computer Science';
+}
+
+.rjpro {
+    transition: opacity 300ms linear;
+}
+
+.rjpro::after {
+    content: 'Began working as an MSP Tech, doing network engineering, help desk, scripting, and website management';
+    left: 65px;
+    width: 500px;
+}
+
+.bvt-ca {
+    transition: opacity 300ms linear;
+}
+
+.bvt-ca::after {
+    content: 'Sharpening developement skills ';
+}
+
+
+.contact-section {
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;   
+}
+
+.middle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px !important;
+}
+
+.info-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+i {
+    font-family: FontAwesome; 
+    font-size: 100px;
+    color: var(--accent);
+    font-style: normal;
+    padding-right: 30px;
+}
+
+.details-wrapper:nth-child(1), .details-wrapper:nth-child(2), .details-wrapper:nth-child(3) {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-decoration: none !important;
+}
+
+.details-wrapper > a {
+    text-decoration: none;
+    color: white;
+}
+
+.details-wrapper > a:hover {
+    text-decoration: underline 2px var(--accent);
 }
