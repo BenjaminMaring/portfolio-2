@@ -14,18 +14,20 @@ const bvtCA = document.querySelector(".bvt-ca");
 const bvtLine = document.querySelector(".line-bvt");
 
 //sets the default states for the elements to hidden
-if (window.scrollY < 2000) {
-    stanTitle.style.opacity = "0";
-    stanVertLine.style.height = "0";
-    bvtCamp.style.opacity = "0";
-    rjPro.style.opacity = "0";
-    rjProLine.style.height = "0px";
-    bvtCA.style.opacity = "0";
-    bvtLine.style.height = "0px";
-}
+
 
 //event listener for scroll
 window.addEventListener('scroll', () => {
+
+    if (window.scrollY < 2000) {
+        stanTitle.style.opacity = "0";
+        stanVertLine.style.height = "0";
+        bvtCamp.style.opacity = "0";
+        rjPro.style.opacity = "0";
+        rjProLine.style.height = "0px";
+        bvtCA.style.opacity = "0";
+        bvtLine.style.height = "0px";
+    }
 
     //changes elements properties based on a given point
     if (window.scrollY > 2000) {
