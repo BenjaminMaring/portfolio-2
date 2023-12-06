@@ -24,10 +24,6 @@ if (window.scrollY < 2000) {
     bvtLine.style.height = "0px";
 }
 
-
-
-
-
 //event listener for scroll
 window.addEventListener('scroll', () => {
 
@@ -49,6 +45,5 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 2600) {
         bvtCA.style.opacity = "1";
         bvtLine.style.height = "142px";
-
     }
 })
